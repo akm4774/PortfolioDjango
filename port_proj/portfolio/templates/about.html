@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About Me{% endblock %}
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/about.css' %}">
+
+<div class="container">
+  <div class="header">
+    <div class="full-name">
+      <span class="first-name">Akshit</span> 
+      <span class="last-name">Manke</span>
+    </div>
+    <div class="contact-info">
+      <span class="email"><i class="fas fa-envelope"></i> Email: </span>
+      <span class="email-val">akshit.manke47@gmail.com</span>
+    </div>
+  </div>
+   <div class="details">
+    <div class="section">
+      <div class="section__title">Education</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="name">Lakshmi Narain College of Technology</div>
+          <div class="duration">B.Tech in Computer Science (8.19 CGPA)</div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section__title">Experience</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="name">Computer Networking Intern</div>
+          <div class="addr">Cisco/AICTE</div>
+          <div class="duration">Nov 2021 - Jul 2025</div>
+          <div class="desc">
+            <p>- Designed and implemented an OSPF (Open Shortest Path First) router model using Cisco Packet Tracer, showcasing proficiency in network protocols and routing algorithms.</p>
+            <p>- Acquired practical knowledge in network troubleshooting, subnetting, and network security through interactive lab exercises and real-world scenarios.</p>
+            <p>- Monitored the performance of the network to ensure optimal performance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section__title">Projects</div> 
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="name">Medicinal Plant Identification</div>
+          <div class="text">
+            <p>- Developed a machine learning project using Flask for implementation.</p>
+            <p>- Created two models for plant identification: a Convolutional Neural Network (CNN) and an ensemble model.</p>
+            <p>- Leveraged transfer learning for CNN training and ensemble techniques for improved accuracy.</p>
+            <p>- Experimented with feature extraction and fine-tuning strategies to optimize model performance.</p>
+            <p>- Evaluated models using metrics like accuracy, precision, recall, and F1-score.</p>
+            <p>- Provided insights into model strengths and limitations for medicinal plant identification applications.</p>
+            <p><strong>Tech Stack:</strong> Python, TensorFlow, Flask, HTML, Bootstrap CSS, Colab</p>
+            <p><a href="https://github.com/akm4774" target="_blank">GitHub</a></p>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="name">BazaarBay</div>
+          <div class="text">
+            <p>- Developed dynamic e-commerce platform with robust backend functionality.</p>
+            <p>- Implemented user signup/login for personalized experiences and data safety.</p>
+            <p>- Integrated responsive design with Bootstrap for cross-device compatibility.</p>
+            <p>- Enabled 'add to cart' functionality for seamless shopping experience even without login/sign-up.</p>
+            <p>- Ensured secure transactions and payment processes using RazorPay API.</p>
+            <p>- Utilized SQLite for efficient data management.</p>
+            <p><strong>Tech Stack:</strong> Django, HTML, JavaScript, SQLite</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section__title">Skills</div>
+      <div class="skills">
+        <div class="skills__item">
+          <div class="left">
+            <div class="name">Languages & Libraries</div>
+          </div>
+          <div class="right">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills__item">
+          <div class="left">
+            <div class="name">Tools & Software</div>
+          </div>
+          <div class="right">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills__item">
+          <div class="left">
+            <div class="name">Other</div>
+          </div>
+          <div class="right">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section__title">Certifications</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="text">
+            - Cisco Networking Academy - Computer Networking / Packet Tracer<br>
+            - Infosys Springboard - Database Management Systems / HTML / DL<br>
+            - Codechef - Python
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section__title">Achievements</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="text">
+            - Reached the final round in two hackathons, highlighting skills in teamwork, and solution development.<br>
+            - Completed Cisco Networking Virtual Internship's advanced project, configuring OSPF for multi-network connectivity, along with CCNAv7 Modules 1 - 3 and received certificates of merit.<br>
+            - Earned the LeetCode 50 Days Badge in 2023, showcasing dedication to daily problem-solving. Mastered problem-solving skills by successfully solving over 100 coding problems.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

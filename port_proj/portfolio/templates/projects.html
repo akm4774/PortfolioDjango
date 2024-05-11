@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block title %}Projects{% endblock %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Modern Business - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-22 col-xl-20 col-xxl-29">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 project-card" >
+                                <div class="card-body p-0" bg-dark>
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Medicinal Plant Identification</h2>
+                                            <p>Developed a machine learning project using Flask for implementation.
+Created two models for plant identification: a Convolutional Neural Network (CNN) and an ensemble model.
+Leveraged transfer learning for CNN training and ensemble techniques for improved accuracy.
+Experimented with feature extraction and fine-tuning strategies to optimize model performance.
+Evaluated models using metrics like accuracy, precision, recall, and F1-score.
+Provided insights into model strengths and limitations for medicinal plant identification applications.</p>
+<p>Tech Stack: Python, TensorFlow, Flask, Bootstrap CSS, Colab</p>
+<p><a href="https://github.com/akm4774">GitHub Repository</a></p>
+                                        </div>
+                                        <img class="img-fluid" src="{% static 'portfolio/images/plantident.png' %}" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 project-card">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">BazaarBay</h2>
+                                            <p>Developed dynamic e-commerce platform with robust backend functionality.
+Implemented user signup/login for personalized experiences and data safety.
+Integrated responsive design with Bootstrap for cross-device compatibility.
+Enabled 'add to cart' functionality for seamless shopping experience even without login/sign-up.
+Ensured secure transactions and payment processes using RazorPay API.
+Utilized SQLite for efficient data management.</p>
+<p>Tech Stack: Django, HTML, JavaScript, mySQL</p>
+<p><a href="https://github.com/akm4774">GitHub Repository</a></p>
+                                        </div>
+                                        <img class="img-fluid" src="{% static 'portfolio/images/ecomm.jpg' %}" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{% url 'contact' %}">Contact me</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+{% endblock %}
